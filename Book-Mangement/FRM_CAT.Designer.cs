@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_CAT));
             this.label8 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TXT_CAT = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -49,24 +49,24 @@
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // bunifuMaterialTextbox8
+            // TXT_CAT
             // 
-            this.bunifuMaterialTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox8.Font = new System.Drawing.Font("Book Antiqua", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox8.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox8.HintText = "";
-            this.bunifuMaterialTextbox8.isPassword = false;
-            this.bunifuMaterialTextbox8.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox8.LineThickness = 9;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(48, 226);
-            this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(13, 11, 13, 11);
-            this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
-            this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(673, 73);
-            this.bunifuMaterialTextbox8.TabIndex = 18;
-            this.bunifuMaterialTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TXT_CAT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TXT_CAT.Font = new System.Drawing.Font("Book Antiqua", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXT_CAT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TXT_CAT.HintForeColor = System.Drawing.Color.Empty;
+            this.TXT_CAT.HintText = "";
+            this.TXT_CAT.isPassword = false;
+            this.TXT_CAT.LineFocusedColor = System.Drawing.Color.Blue;
+            this.TXT_CAT.LineIdleColor = System.Drawing.Color.Gray;
+            this.TXT_CAT.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.TXT_CAT.LineThickness = 9;
+            this.TXT_CAT.Location = new System.Drawing.Point(48, 226);
+            this.TXT_CAT.Margin = new System.Windows.Forms.Padding(13, 11, 13, 11);
+            this.TXT_CAT.Name = "TXT_CAT";
+            this.TXT_CAT.Size = new System.Drawing.Size(673, 73);
+            this.TXT_CAT.TabIndex = 18;
+            this.TXT_CAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuThinButton22
             // 
@@ -119,10 +119,10 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.bunifuMaterialTextbox8);
+            this.Controls.Add(this.TXT_CAT);
             this.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FRM_CAT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FRM_CAT_Load);
@@ -135,7 +135,7 @@
         #endregion
 
         private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TXT_CAT;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }

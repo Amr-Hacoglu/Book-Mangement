@@ -83,6 +83,24 @@
     <Compile Include="FRM_CAT.Designer.cs">
       <DependentUpon>FRM_CAT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_DI_DELETE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DI_DELETE.Designer.cs">
+      <DependentUpon>FRM_DI_DELETE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DI_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DI_EDIT.Designer.cs">
+      <DependentUpon>FRM_DI_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DI_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DI_ADD.Designer.cs">
+      <DependentUpon>FRM_DI_ADD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -93,6 +111,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_CAT.resx">
       <DependentUpon>FRM_CAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DI_DELETE.resx">
+      <DependentUpon>FRM_DI_DELETE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DI_EDIT.resx">
+      <DependentUpon>FRM_DI_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DI_ADD.resx">
+      <DependentUpon>FRM_DI_ADD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -70,17 +70,23 @@ namespace Book_Mangement
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-
+            Form frm_di_add = new FRM_DI_ADD();
+            frm_di_add.Show();
+             
         }
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-
+            // just trying i will delete it later
+            Form frm_di_delete = new FRM_DI_DELETE();
+            frm_di_delete.Show();
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            Form frm_add = new FRM_ADD();
+            // just trying i will delete it later
+            FRM_ADD frm_add = new FRM_ADD();
+            frm_add.BTBInsertIntoInsert.ButtonText = "Insert the book";
             bunifuTransition1.ShowSync(frm_add);
         }
 
@@ -129,6 +135,13 @@ namespace Book_Mangement
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuThinButton21_Click_1(object sender, EventArgs e)
+        {
+            // just trying i will delete it later
+            Form frm_di_edit = new FRM_DI_EDIT();
+            frm_di_edit.Show();
         }
     }
 }
