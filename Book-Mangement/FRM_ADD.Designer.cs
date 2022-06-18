@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ADD));
+            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(726, 56);
+            this.panel1.Size = new System.Drawing.Size(688, 56);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -90,9 +90,9 @@
             this.label4.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(237, 9);
+            this.label4.Location = new System.Drawing.Point(257, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 35);
+            this.label4.Size = new System.Drawing.Size(175, 28);
             this.label4.TabIndex = 2;
             this.label4.Text = "Inserting Book";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -104,7 +104,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(684, 15);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(646, 15);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(26, 26);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +121,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 56);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(726, 596);
+            this.panel3.Size = new System.Drawing.Size(688, 522);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -137,10 +137,10 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.bunifuTransition1.SetDecoration(this.groupBox2, BunifuAnimatorNS.DecorationType.None);
-            this.groupBox2.Location = new System.Drawing.Point(39, 18);
+            this.groupBox2.Location = new System.Drawing.Point(20, 18);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox2.Size = new System.Drawing.Size(301, 556);
+            this.groupBox2.Size = new System.Drawing.Size(301, 497);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Information";
@@ -150,9 +150,9 @@
             // 
             this.bunifuTransition1.SetDecoration(this.TXT_CAT, BunifuAnimatorNS.DecorationType.None);
             this.TXT_CAT.FormattingEnabled = true;
-            this.TXT_CAT.Location = new System.Drawing.Point(0, 444);
+            this.TXT_CAT.Location = new System.Drawing.Point(0, 364);
             this.TXT_CAT.Name = "TXT_CAT";
-            this.TXT_CAT.Size = new System.Drawing.Size(301, 36);
+            this.TXT_CAT.Size = new System.Drawing.Size(301, 30);
             this.TXT_CAT.TabIndex = 24;
             this.TXT_CAT.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -163,7 +163,7 @@
             this.bunifuTransition1.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(246, 394);
+            this.button1.Location = new System.Drawing.Point(246, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 38);
             this.button1.TabIndex = 23;
@@ -183,7 +183,7 @@
             this.TXT_AUTHER.LineIdleColor = System.Drawing.Color.Gray;
             this.TXT_AUTHER.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TXT_AUTHER.LineThickness = 4;
-            this.TXT_AUTHER.Location = new System.Drawing.Point(0, 228);
+            this.TXT_AUTHER.Location = new System.Drawing.Point(0, 170);
             this.TXT_AUTHER.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TXT_AUTHER.Name = "TXT_AUTHER";
             this.TXT_AUTHER.Size = new System.Drawing.Size(301, 34);
@@ -196,9 +196,9 @@
             this.label5.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(6, 399);
+            this.label5.Location = new System.Drawing.Point(6, 320);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 28);
+            this.label5.Size = new System.Drawing.Size(88, 23);
             this.label5.TabIndex = 21;
             this.label5.Text = "Category";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -208,9 +208,9 @@
             this.label8.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(6, 63);
+            this.label8.Location = new System.Drawing.Point(6, 26);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 28);
+            this.label8.Size = new System.Drawing.Size(110, 23);
             this.label8.TabIndex = 15;
             this.label8.Text = "Book Name";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -228,7 +228,7 @@
             this.TXT_PRICE.LineIdleColor = System.Drawing.Color.Gray;
             this.TXT_PRICE.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TXT_PRICE.LineThickness = 4;
-            this.TXT_PRICE.Location = new System.Drawing.Point(0, 340);
+            this.TXT_PRICE.Location = new System.Drawing.Point(0, 263);
             this.TXT_PRICE.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TXT_PRICE.Name = "TXT_PRICE";
             this.TXT_PRICE.Size = new System.Drawing.Size(301, 34);
@@ -249,7 +249,7 @@
             this.TXT_name.LineIdleColor = System.Drawing.Color.Gray;
             this.TXT_name.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.TXT_name.LineThickness = 4;
-            this.TXT_name.Location = new System.Drawing.Point(0, 116);
+            this.TXT_name.Location = new System.Drawing.Point(0, 66);
             this.TXT_name.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TXT_name.Name = "TXT_name";
             this.TXT_name.Size = new System.Drawing.Size(301, 34);
@@ -262,9 +262,9 @@
             this.label6.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(6, 287);
+            this.label6.Location = new System.Drawing.Point(6, 228);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 28);
+            this.label6.Size = new System.Drawing.Size(52, 23);
             this.label6.TabIndex = 19;
             this.label6.Text = "Price";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -274,9 +274,9 @@
             this.label7.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(6, 175);
+            this.label7.Location = new System.Drawing.Point(6, 127);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 28);
+            this.label7.Size = new System.Drawing.Size(70, 23);
             this.label7.TabIndex = 17;
             this.label7.Text = "Auther";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -292,10 +292,10 @@
             this.groupBox1.Controls.Add(this.bunifuMaterialTextbox1);
             this.groupBox1.Controls.Add(this.label1);
             this.bunifuTransition1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupBox1.Location = new System.Drawing.Point(380, 18);
+            this.groupBox1.Location = new System.Drawing.Point(365, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(301, 556);
+            this.groupBox1.Size = new System.Drawing.Size(301, 497);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Secondery Information";
@@ -305,9 +305,9 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.linkLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.linkLabel1.Location = new System.Drawing.Point(69, 519);
+            this.linkLabel1.Location = new System.Drawing.Point(83, 467);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(157, 28);
+            this.linkLabel1.Size = new System.Drawing.Size(127, 23);
             this.linkLabel1.TabIndex = 16;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Upload Photo";
@@ -317,7 +317,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.IMAGE_COVER, BunifuAnimatorNS.DecorationType.None);
             this.IMAGE_COVER.Image = ((System.Drawing.Image)(resources.GetObject("IMAGE_COVER.Image")));
-            this.IMAGE_COVER.Location = new System.Drawing.Point(11, 318);
+            this.IMAGE_COVER.Location = new System.Drawing.Point(10, 263);
             this.IMAGE_COVER.Name = "IMAGE_COVER";
             this.IMAGE_COVER.Size = new System.Drawing.Size(280, 192);
             this.IMAGE_COVER.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -331,7 +331,7 @@
             this.bunifuTransition1.SetDecoration(this.TXT_RATE, BunifuAnimatorNS.DecorationType.None);
             this.TXT_RATE.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXT_RATE.ForeColor = System.Drawing.Color.SeaGreen;
-            this.TXT_RATE.Location = new System.Drawing.Point(11, 215);
+            this.TXT_RATE.Location = new System.Drawing.Point(11, 157);
             this.TXT_RATE.Margin = new System.Windows.Forms.Padding(7);
             this.TXT_RATE.Name = "TXT_RATE";
             this.TXT_RATE.Size = new System.Drawing.Size(290, 47);
@@ -348,7 +348,7 @@
             this.TXT_DATE.ForeColor = System.Drawing.Color.White;
             this.TXT_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.TXT_DATE.FormatCustom = null;
-            this.TXT_DATE.Location = new System.Drawing.Point(0, 116);
+            this.TXT_DATE.Location = new System.Drawing.Point(0, 56);
             this.TXT_DATE.Margin = new System.Windows.Forms.Padding(7);
             this.TXT_DATE.Name = "TXT_DATE";
             this.TXT_DATE.Size = new System.Drawing.Size(301, 44);
@@ -361,9 +361,9 @@
             this.label3.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(6, 287);
+            this.label3.Location = new System.Drawing.Point(6, 228);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 28);
+            this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 11;
             this.label3.Text = "Cover";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -373,9 +373,9 @@
             this.label2.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(6, 175);
+            this.label2.Location = new System.Drawing.Point(6, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 28);
+            this.label2.Size = new System.Drawing.Size(48, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "Rate";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -393,7 +393,7 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(0, 116);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(0, 54);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(301, 34);
@@ -406,9 +406,9 @@
             this.label1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(6, 63);
+            this.label1.Location = new System.Drawing.Point(6, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 28);
+            this.label1.Size = new System.Drawing.Size(50, 23);
             this.label1.TabIndex = 7;
             this.label1.Text = "Date";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -418,9 +418,9 @@
             this.panel2.Controls.Add(this.BTBInsertIntoInsert);
             this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 652);
+            this.panel2.Location = new System.Drawing.Point(0, 578);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(726, 120);
+            this.panel2.Size = new System.Drawing.Size(688, 88);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -444,10 +444,10 @@
             this.BTBInsertIntoInsert.IdleFillColor = System.Drawing.Color.White;
             this.BTBInsertIntoInsert.IdleForecolor = System.Drawing.Color.DarkCyan;
             this.BTBInsertIntoInsert.IdleLineColor = System.Drawing.Color.DarkCyan;
-            this.BTBInsertIntoInsert.Location = new System.Drawing.Point(163, 17);
+            this.BTBInsertIntoInsert.Location = new System.Drawing.Point(179, 9);
             this.BTBInsertIntoInsert.Margin = new System.Windows.Forms.Padding(6);
             this.BTBInsertIntoInsert.Name = "BTBInsertIntoInsert";
-            this.BTBInsertIntoInsert.Size = new System.Drawing.Size(401, 80);
+            this.BTBInsertIntoInsert.Size = new System.Drawing.Size(330, 65);
             this.BTBInsertIntoInsert.TabIndex = 5;
             this.BTBInsertIntoInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BTBInsertIntoInsert.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -456,30 +456,30 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation5;
             this.bunifuTransition1.Interval = 4;
             // 
             // FRM_ADD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(726, 772);
+            this.ClientSize = new System.Drawing.Size(688, 666);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -518,21 +518,21 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TXT_PRICE;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TXT_name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuDatepicker TXT_DATE;
-        private Bunifu.Framework.UI.BunifuRating TXT_RATE;
-        private System.Windows.Forms.PictureBox IMAGE_COVER;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TXT_AUTHER;
-        private System.Windows.Forms.ComboBox TXT_CAT;
         public Bunifu.Framework.UI.BunifuThinButton2 BTBInsertIntoInsert;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox TXT_PRICE;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox TXT_name;
+        public Bunifu.Framework.UI.BunifuDatepicker TXT_DATE;
+        public Bunifu.Framework.UI.BunifuRating TXT_RATE;
+        public System.Windows.Forms.PictureBox IMAGE_COVER;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox TXT_AUTHER;
+        public System.Windows.Forms.ComboBox TXT_CAT;
     }
 }

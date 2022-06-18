@@ -18,7 +18,7 @@ namespace Book_Mangement
         SqlConnection con = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         List<String> List = new List<string>(); // make list for string values
-
+        public int state;
 
         public FRM_ADD()
         {
@@ -198,31 +198,62 @@ namespace Book_Mangement
       
             else
             {
-            MemoryStream ma = new MemoryStream(); // we will use this varaible to convert a photo into binary
-            IMAGE_COVER.Image.Save(ma,System.Drawing.Imaging.ImageFormat.Jpeg); // save the photo as ....
-            var _cover = ma.ToArray();
+                if(state == 0) { // Insert
+                    MemoryStream ma = new MemoryStream(); // we will use this varaible to convert a photo into binary
+                    IMAGE_COVER.Image.Save(ma,System.Drawing.Imaging.ImageFormat.Jpeg); // save the photo as ....
+                    var _cover = ma.ToArray();
 
 
-                con.ConnectionString = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\90538\Desktop\C#\C# Book-Man\Book-Mangement\Book-Mangement\Database1.mdf;Integrated Security=True");
-                con.Open();
-                cmd.Connection = con;
-                cmd.CommandText = "INSERT INTO BOOKS (Title,Auther,Price,Category,Date,Rate,Cover) VALUES (@Title,@Auther,@Price,@Category,@Date,@Rate,@Cover)";
-                cmd.Parameters.AddWithValue("@Title", TXT_name.Text);   //TXT_name -> the name of the attribute on the design
-                cmd.Parameters.AddWithValue("@Auther", TXT_AUTHER.Text);
-                cmd.Parameters.AddWithValue("@Price", TXT_PRICE.Text);
-                cmd.Parameters.AddWithValue("@Category", TXT_CAT.Text);
-                cmd.Parameters.AddWithValue("@Date", TXT_DATE.Value);
-                cmd.Parameters.AddWithValue("@Rate", TXT_RATE.Value);
-                cmd.Parameters.AddWithValue("@Cover", _cover); // 183,184,185 instead of this statment, because be wanna to convert the photo to binary to keep it into sql data
+                        con.ConnectionString = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\90538\Desktop\C#\C# Book-Man\Book-Mangement\Book-Mangement\Database1.mdf;Integrated Security=True");
+                        con.Open();
+                        cmd.Connection = con;
+                        cmd.CommandText = "INSERT INTO BOOKS (Title,Auther,Price,Category,Date,Rate,Cover) VALUES (@Title,@Auther,@Price,@Category,@Date,@Rate,@Cover)";
+                        cmd.Parameters.AddWithValue("@Title", TXT_name.Text);   //TXT_name -> the name of the attribute on the design
+                        cmd.Parameters.AddWithValue("@Auther", TXT_AUTHER.Text);
+                        cmd.Parameters.AddWithValue("@Price", TXT_PRICE.Text);
+                        cmd.Parameters.AddWithValue("@Category", TXT_CAT.Text);
+                        cmd.Parameters.AddWithValue("@Date", TXT_DATE.Value);
+                        cmd.Parameters.AddWithValue("@Rate", TXT_RATE.Value);
+                        cmd.Parameters.AddWithValue("@Cover", _cover); // 183,184,185 instead of this statment, because be wanna to convert the photo to binary to keep it into sql data
                 
-                cmd.ExecuteNonQuery();  //apply the operation on the query 
-                con.Close();
-                //show
-                Form frm_add = new FRM_DI_ADD();
-                frm_add.Show();
-                this.Close();
-            }
+                        cmd.ExecuteNonQuery();  //apply the operation on the query 
+                        con.Close();
+                        //show
+                        Form frm_add = new FRM_DI_ADD();
+                        frm_add.Show();
+                        this.Close();
+                }
+                else
+                {
+                    // Edit
+                    MemoryStream ma = new MemoryStream(); // we will use this varaible to convert a photo into binary
+                    IMAGE_COVER.Image.Save(ma, System.Drawing.Imaging.ImageFormat.Jpeg); // save the photo as ....
+                    var _cover = ma.ToArray();
 
+
+                    con.ConnectionString = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\90538\Desktop\C#\C# Book-Man\Book-Mangement\Book-Mangement\Database1.mdf;Integrated Security=True");
+                    con.Open();
+                    cmd.Connection = con;
+                    cmd.CommandText = "UPDATE BOOKS SET Title=@Title , Auther=@Auther , Price=@Price , Category=@Category , Date=@Date , Rate=@Rate , Cover=@Cover WHERE Id = @Id";
+                    cmd.Parameters.AddWithValue("@Title", TXT_name.Text);   //TXT_name -> the name of the attribute on the design
+                    cmd.Parameters.AddWithValue("@Auther", TXT_AUTHER.Text);
+                    cmd.Parameters.AddWithValue("@Price", TXT_PRICE.Text);
+                    cmd.Parameters.AddWithValue("@Category", TXT_CAT.Text);
+                    cmd.Parameters.AddWithValue("@Date", TXT_DATE.Value);
+                    cmd.Parameters.AddWithValue("@Rate", TXT_RATE.Value);
+                    cmd.Parameters.AddWithValue("@Cover", _cover); // 183,184,185 instead of this statment, because be wanna to convert the photo to binary to keep it into sql data
+                    cmd.Parameters.AddWithValue("@Id", state);
+
+                    cmd.ExecuteNonQuery();  //apply the operation on the query 
+                    con.Close();
+                    //show
+                    Form frm_edit = new FRM_DI_EDIT();
+                    frm_edit.Show();
+                    this.Close();
+
+                }
+            }
+            cmd.Parameters.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)

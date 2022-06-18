@@ -89,6 +89,12 @@
     <Compile Include="FRM_DI_DELETE.Designer.cs">
       <DependentUpon>FRM_DI_DELETE.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INFO.Designer.cs">
+      <DependentUpon>FRM_INFO.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_DI_EDIT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_DI_DELETE.resx">
       <DependentUpon>FRM_DI_DELETE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INFO.resx">
+      <DependentUpon>FRM_INFO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_DI_EDIT.resx">
       <DependentUpon>FRM_DI_EDIT.cs</DependentUpon>
